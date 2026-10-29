@@ -1,0 +1,90 @@
+.hero{
+    padding: 7.812vw 6.25vw clamp(50px ,7.812vw , 150px) clamp(30px ,6.25vw , 120px);
+    margin: clamp(184px ,12.77vw , 230px) 2.604vw 0px;
+    background-color: var(--color-white);
+    border: 2px solid var(--gray-800);
+    background-image: url(/assets/img/AbstractDesign.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0px 1px #1E1E1E;
+
+}
+
+.title_Desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(20px , 3.472vw , 50px);
+}
+.container{
+    width:  39.84vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:clamp(10px ,0.694vw , 14px) ;
+}
+.title{
+    width: clamp(300px ,39.84vw , 765px);
+    font-family: var(--font-family-Raleway);
+    font-weight: 700;
+    font-size:clamp(38px ,2.5vw , 48px);
+    line-height: 1.3;
+    color: var(--gray-900);
+    letter-spacing: 0;
+}
+.description{
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(16px , 1.111vw , 20px);
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+
+.content{
+    padding: clamp(8px , 0.555vw , 10px) clamp(14px , 0.972vw , 20px) ;
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(14px , 1.111vw , 18px);
+    line-height: 1.5;
+    border-radius: 8px;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-white);
+}
+
+@media screen and (max-width : 992px){
+.hero{
+    padding:50px 30px ;
+    margin: 221px 16px 0px;
+    background-size: 100px 100px;
+    box-shadow: 6px 6px 0px 1px #1E1E1E;
+}
+.title_Desc{
+    flex-direction: column;
+}
+.description {
+    text-align: center;}
+.title{
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+
+}
+.container{
+    width: 100%;
+    align-items: center;
+}
+}
+@media screen and (min-width : 992px) and (max-width : 1440px){
+.hero{
+    padding:6.9444vw 5.555vw ;
+    margin-inline: 5.555vw;
+    background-size: 137px 137px;
+    box-shadow: 6px 6px 0px 1px #1E1E1E;
+}
+.container{
+    width: 37.152vw;
+}
+}

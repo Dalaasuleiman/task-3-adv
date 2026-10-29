@@ -1,0 +1,94 @@
+.card{
+    padding:clamp(30px , 2.777vw , 50px);
+    border-radius: 12px;
+    background-color: var(--color-white);
+    border: 2px solid var(--gray-800);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+}
+.topCard{
+    width: 100%;
+    margin-bottom: clamp(24px , 1.666vw , 30px);;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.img_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(10px , 1.527vw , 27px);
+}
+.divImg{
+    width:clamp(60px , 5.555vw , 100px);
+    height:clamp(60px , 5.555vw , 100px);
+    border: 2px solid var(--gray-800);
+    border-radius: 12px;
+    background-color: var(--bg-color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.img{
+    width: 148%;
+    height: 100%;
+}
+.name{
+    font-family: var(--font-family-Raleway);
+    font-weight: 800;
+    font-size: clamp(20px , 1.666vw , 30px);
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+.divIcon{
+    width:clamp(48px , 3.88vw , 56px);
+    height:clamp(48px , 3.88vw , 56px);
+    background-color: var(--color-orange-200);
+    border: 2px solid var(--gray-800);
+    border-radius: 8px;
+    font-size: clamp(20px , 1.388vw , 24px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    padding: clamp(16px , 1.666vw , 30px);
+    border: 2px solid var(--gray-800);
+    background-color: var(--bg-color-primary);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap:clamp(12px , 1.111vw , 20px);
+}
+
+.title{
+    font-family: var(--font-family-Outfit);
+    font-weight: 600;
+    font-size: clamp(20px , 1.388vw , 24px);
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+.desc{
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size:clamp(16px , 1.111vw , 20px);
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+
+@media screen and (max-width : 992px){
+    .card{
+        width: 100%;
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
+
+    }
+}
+
+@media screen and (max-width : 360px){
+    .card{
+        padding:10px;
+    }
+}

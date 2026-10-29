@@ -1,0 +1,44 @@
+.card{
+    padding:clamp(40px , 3.472vw , 60px);
+    border-radius: 12px;
+    background-color: var(--color-white);
+    border: 2px solid var(--gray-800);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+}
+.container{
+    margin-bottom:clamp(40px , 3.472vw , 60px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-family: var(--font-family-Raleway);
+    font-weight: 700;
+    font-size:clamp(30px , 2.63vw , 48px);
+    line-height: 130%;
+    text-align: center;
+    color: var(--gray-900);
+}
+
+.img{
+    width:clamp(60px , 4.861vw , 90px);
+    height:clamp(55px , 4.513vw , 85px);
+}
+
+.desc{
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(16px , 1.11vw , 20px);
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+
+@media screen and (max-width : 992px){
+    .card{
+        width: 100%;
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
+
+    }
+}

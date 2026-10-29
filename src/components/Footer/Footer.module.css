@@ -1,0 +1,189 @@
+footer{
+    padding-block: clamp(60px , 5.555vw , 100px) clamp(30px ,2.78vw , 40px);
+    padding-inline: clamp(27px ,5.88vw , 113px);
+    margin-block: clamp(80px , 10.418vw , 200px) clamp(20px ,2.78vw , 50px);
+    margin-inline: clamp(16px ,3.47vw , 50px);
+    border-radius: 12px;
+    border: 2px solid var(--gray-800);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    background-color: var(--color-white) ;
+    a{
+    text-decoration: none;
+    &:hover{
+        color: var(--color-orange-500);
+    }
+    }
+}
+.container1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: clamp(40px ,5.55vw , 80px);
+}
+.littleLearners{
+    width: clamp(393px ,27.3vw , 519px);
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: clamp(183px ,12.7vw , 228px);
+    margin-bottom:  clamp(16px ,1.111vw , 20px);
+}
+.desc{
+    margin-bottom: clamp(40px , 2.77vw , 50px);
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(16px , 1.11vw , 20px);
+    line-height: 1.5;
+    color: var(--gray-600);
+}
+.infoContact{
+    margin-bottom: clamp(20px , 1.388vw , 24px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+.iconContact{
+    width: clamp(32px , 2.22vw , 40px);
+    height: clamp(32px , 2.22vw , 40px);
+    border-radius: 6px;
+    background-color: var(--bg-color-primary);
+    border: 2px solid var(--gray-800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:clamp(20px , 1.388vw , 24px);
+}
+.info{
+    text-decoration: none;
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(16px , 1.11vw , 20px);
+    line-height: 1.5;
+    color: var(--gray-800);
+}
+.container2{
+    width:clamp(707px , 49.1vw , 995px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:clamp(20px , 1.388vw , 30px);
+}
+.Home_AboutUs , .Academics_ContactUs {
+    display: flex;
+    flex-direction: row;
+    gap:clamp(20px , 1.388vw , 30px);
+}
+.home , .aboutUs , .academics ,.contactUs{
+    width: clamp(100px ,11.8vw , 226px);
+}
+.title , .titleLink{
+    margin-bottom: clamp(20px , 1.388vw , 24px);
+    font-family: var(--font-family-Outfit);
+    font-weight: 600;
+    font-size: clamp(16px , 1.11vw , 20px);
+    line-height: 1.5;
+    color: var(--gray-600);
+    cursor: pointer;
+}
+.items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+    
+}
+
+.item{
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(16px , 1.11vw , 20px);
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+
+.container3{
+    padding-block: clamp(16px , 1.388vw , 30px);
+    margin-top:clamp(30px , 2.77vw , 50px);
+    border-block: 1px solid var(--gray-800);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.Service_Policy{
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(14px , 1.111vw , 18px);
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+.rightContent{
+    display:flex;
+    flex-direction: row;
+    gap: clamp(10px , 0.97vw , 14px);
+}
+.socialMedia{
+    width: clamp(44px , 3.333vw , 56px);
+    height:  clamp(44px , 3.333vw , 56px);
+    border-radius: 6px;
+    font-size: clamp(20px , 1.388vw , 24px);
+    color: var(--gray-800);
+    background-color: var(--color-orange-200);
+    border: 2px solid var(--gray-800);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.Copyright{
+    width: fit-content;
+    margin-top: clamp(16px , 1.388vw , 30px);
+    margin-inline: auto;
+    display: block;
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(14px , 1.11vw , 18px);
+    line-height: 1.5;
+    color: var(--gray-500);
+    text-align: center;
+}
+@media screen and (max-width : 992px) {
+    footer{
+        box-shadow: 6px 6px 0px 1px #1E1E1E;
+    }
+
+    .container1 {
+        width: 100%;
+        flex-direction: column;
+    }
+    .littleLearners ,  .container2{
+        width: 100%;
+}
+
+    .logo{
+        width: 183px;
+        margin-inline: auto;
+    }
+    .desc{
+        text-align: center;
+    }
+    .Home_AboutUs , .Academics_ContactUs{
+        width: 34.35vw;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .container2{
+        width: 100%;
+        gap: 30px;
+    }
+    .container3{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}

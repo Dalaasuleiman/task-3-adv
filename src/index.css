@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --font-family-Raleway: "Raleway", sans-serif;
+  --font-family-Outfit: "Outfit", sans-serif;
+  --color-white:#FFFFFF;
+  --color-black:#000000;
+
+  --bg-color-primary: #FFF5F0;
+  --color-orange-500:#FF8D4D;
+  --color-orange-450:#FF9E66;
+  --color-orange-400:#FFAE80;
+  --color-orange-300:#FFBE99;
+  --color-orange-200:#FFDECC;
+  --color-orange-100:#FFEFE5;
+
+  --gray-900: #1a1a1a;  
+  --gray-800: #262626;  
+  --gray-700: #333333;  
+  --gray-600: #4c4c4d;
+  --gray-500: #656567; 
+}
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: var( --bg-color-primary);
+  }

@@ -1,0 +1,103 @@
+.card{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    
+}
+.containerImgs{
+    /* width: 100%; */
+    margin: 0px clamp(30px , 2.777vw , 50px)  ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    position:relative;
+    top: 0;
+    transform: translateY(50%);
+    overflow: hidden;
+}
+.img{
+    width:  clamp(200px , 17.4vw , 344px) ;
+    height:clamp(203px , 16.25vw , 304px)  ;
+    border-radius: 12px;
+    border: 2px solid var(--gray-800);
+    flex-shrink: 0;
+}
+.container{
+    width: 100%;
+    padding: clamp(120px , 12.5vw , 200px)  clamp(30px , 2.777vw , 50px) clamp(30px , 2.777vw , 50px) ;
+    border: 2px solid var(--gray-800);
+    background-color: var(--color-white);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px , 2.083vw , 40px);
+
+}
+.title_btnSlider{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+.title{
+    font-family: var(--font-family-Raleway);
+    font-weight: 700;
+    font-size: clamp(28px , 2.3611vw , 40px);
+    line-height: 1.3;
+    color: var(--gray-900);
+}
+.arrows{
+    display: flex;
+    flex-direction: row;
+    gap: clamp(16px , 1.111vw , 20px);
+}
+.arrow{
+    width: clamp(48px , 3.333vw , 58px);
+    height:  clamp(48px , 3.333vw , 58px);
+    border-radius: 8px;
+    background-color: var(--color-white);
+    border: 2px solid var(--gray-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.desc{
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(18px , 1.388vw , 22px);
+    line-height: 150%;
+    color: var(--gray-600);
+    
+}
+@media screen and (max-width : 1440px){
+    .img{
+        width:  clamp(150px , 17.75vw , 270px) ;
+    }
+}
+@media screen and (max-width : 992px){
+    .card{
+        max-width: 550px;
+    }
+    .containerImgs{
+        overflow: hidden;
+    }
+    .container{
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
+}
+    .img{
+       width: 100%;
+        margin: auto;
+    }
+    .title_btnSlider{
+        flex-direction: column;
+    }
+    .desc , .title{
+        text-align: center;
+    }
+}

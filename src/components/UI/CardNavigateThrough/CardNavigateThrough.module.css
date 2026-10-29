@@ -1,0 +1,63 @@
+.card{
+    padding: clamp(40px , 4.167vw , 76px);
+    max-width: 800px;
+    border-radius: 12px;
+    background-color: var(--color-white);
+    border: 2px solid var(--gray-800);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.title{
+    margin-bottom: clamp(20px , 1.67vw , 30px);
+    font-family: var(--font-family-Raleway);
+    font-weight: 700;
+    font-size:clamp(28px , 2.5vw , 48px);
+    line-height: 130%;
+    text-align: center;
+    color: var(--gray-900);
+}
+.desc{
+    margin-bottom: clamp(40px , 4.167vw , 80px);
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(16px , 1.11vw , 20px);
+    line-height: 1.5;
+    text-align: center;
+    color: var(--gray-600);
+}
+
+.btn{
+    width: 100%;
+    padding-block: clamp(16px , 1.25vw , 18px);
+    border-radius: 10px;
+    font-size: clamp(16px , 1.25vw , 20px);
+    background-color: var(--color-orange-200);
+    border: 2px solid var(--gray-800);
+    box-shadow: 4px 4px 0px 2px #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon{
+    margin-left: 10px;
+    font-size: clamp(20px , 1.67vw , 30px);
+}
+
+@media screen and (max-width : 992px){
+    .card{
+        width: 100%;
+        padding: clamp(20px , 10.256vw , 40px);
+        margin: 0 auto;
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
+    }
+    .btn{
+        box-shadow: 2px 2px 0px 1px #1E1E1E;
+    }
+}

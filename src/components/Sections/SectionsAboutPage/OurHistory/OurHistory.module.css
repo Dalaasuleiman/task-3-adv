@@ -1,0 +1,89 @@
+.ourHistory{
+    margin-top: clamp(80px , 10.416vw , 200px);
+}
+
+.title_Desc{
+    width: clamp(880px , 61.11vw , 996px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(10px , 0.972vw , 19px);
+} 
+.title{
+    font-family: var(--font-family-Raleway);
+    font-weight: 700;
+    font-size:clamp(38px , 3.333vw , 48px);
+    line-height: 1.3;
+    text-align: center;
+    color: var(--gray-900);
+    letter-spacing: 0;
+}
+.description{
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(16px , 1.111vw , 20px);
+    line-height: 1.5;
+    text-align: center;
+    color: var(--gray-700);
+}
+
+.content{
+    padding: clamp(8px , 0.555vw , 10px) clamp(14px , 0.972vw , 20px) ;
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(14px , 1.111vw , 18px);
+    line-height: 1.5;
+    border-radius: 8px;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-white);
+}
+.container{
+    width: 100%;
+    margin-top: clamp(50px ,5.555vw , 100px);
+    padding: clamp(100px ,6.944vw , 150px);;
+    border-radius: 12px;
+    border: 2px solid var(--gray-800);
+    background-color: var(--color-white);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    display: flex;
+    flex-direction: row;
+}
+.line{
+    height: calc(100% - 140px);
+    width: 10px;
+    margin: 70px 0;
+    background-color: var(--color-black);
+    border: 4px solid var(--color-orange-300);
+    border-block: none;
+    position: absolute;
+    left: 14px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(50px ,5.555vw , 100px);
+    position: relative;
+}
+
+@media screen and (max-width : 992px){
+    .title_Desc{
+        width: 100%;
+    }
+    .container{
+        padding: 50px 20px 50px 10px;
+    }
+
+    .line{
+        height: 80%;
+        margin: 35px 0 250px;
+    }
+}
+
+
+@media screen and (max-width : 1440px){
+        .container{
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
+    }
+}

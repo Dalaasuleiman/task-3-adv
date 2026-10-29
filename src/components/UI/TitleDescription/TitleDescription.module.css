@@ -1,0 +1,6 @@
+.color_orange{
+    color:var(--color-orange-500);
+}
+.color_black{
+    color:var(--gray-900);
+}

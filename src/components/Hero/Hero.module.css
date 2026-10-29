@@ -1,0 +1,127 @@
+.hero{
+    width: 100%;
+    padding-inline: 8.645vw;
+    margin-top:clamp(204px , 14.166vw , 250px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(40px , 3.47vw , 60px);
+}
+.hero_Img{
+    width: clamp(400px , 42.7vw , 765px);
+    height: clamp(663px , 46vw , 785px);
+    background-color: var(--color-orange-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.children{
+    width: 99%;
+    height: 99%;
+    border: 2.5px solid var(--color-black);
+}
+.AbstractDesign{
+    width: clamp(282px , 32.36vw , 558px);
+    height: clamp(306px , 35.2vw , 607px);
+    position: absolute;
+    z-index: 2;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid var(--color-black);
+    background-color: var(--color-white);
+    position: absolute;
+}
+.circle1{
+    top: -5px;
+    left: -6px;
+    z-index: 2;
+}
+.circle2{
+    top: -5px;
+    right: -6px;
+    z-index: 2;
+}
+.circle3{
+    bottom: -5px;
+    right: -6px;
+    z-index: 2;
+}
+.circle4{
+    bottom: -5px;
+    left: -6px;
+    z-index: 2;
+}
+.hero_text{
+    width: clamp(400px , 42.7vw , 765px);
+}
+.title_Desc{
+    width: 100%;
+}
+.content{
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--gray-800);
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size:  clamp(16px , 1.25vw , 22px);
+    line-height: 1.5;
+    color: var(--gray-800);
+}
+.title{
+    margin-top: 4px;
+    font-family: var(--font-family-Raleway) ;
+    font-weight: 800;
+    font-size: clamp(30px , 2.78vw , 54px);
+    line-height: 1.3;
+}
+.description{
+    margin-top: clamp(18px , 1.55vw , 30px);
+    font-family: var(--font-family-Outfit);
+    font-weight: 500;
+    font-size: clamp(16px , 1.11vw , 20px);
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+
+
+@media screen and (max-width : 1440px){
+    .hero{
+        padding-inline: 5.555vw ;
+    }
+}
+@media screen and (max-width : 992px){
+    .hero{
+        width: 100%;
+        padding-inline: 4.2vw ;
+        margin-top:211px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .hero_Img{
+    width: 100%;
+    max-width: 600px;
+    height: 410px;
+    background-color: var(--color-orange-300);
+}
+    .hero_text{
+        width: 100%;
+    }
+    .title_Desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+    .title{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .description{
+        text-align: center;
+    }
+
+}

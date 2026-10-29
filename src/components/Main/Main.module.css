@@ -1,0 +1,17 @@
+main{
+    padding-inline: 8.645vw;
+}
+.mainAbout{
+    padding-inline:8.4375vw;
+}
+@media screen and (max-width : 1440px){
+    main , .mainAbout{
+        padding-inline: 5.555vw ;
+    }
+}
+
+@media screen and (max-width : 992px){
+    main , .mainAbout{
+        padding-inline: 4.2vw ;
+    }
+}
